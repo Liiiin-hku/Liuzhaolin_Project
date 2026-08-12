@@ -1,0 +1,18 @@
+<launch>
+  <arg name="shape_config" default="configs/shape_sensor_2.yaml" />
+  <arg name="camera_channel" default="-1" />
+  <arg name="image_topic" default="/rectify_crop_image" />
+  <arg name="reference_image_topic" default="/rectify_crop_ref_image" />
+
+  <node pkg="nine_dtact_ft300_ros" type="sensor_node.py" name="sensor2_image_publisher" output="screen">
+    <param name="shape_config" value="$(arg shape_config)" />
+    <param name="camera_channel" value="$(arg camera_channel)" />
+    <param name="image_topic" value="$(arg image_topic)" />
+    <param name="reference_image_topic" value="$(arg reference_image_topic)" />
+  </node>
+  <node pkg="nine_dtact_ft300_ros" type="shape_reconstruction_node.py" name="sensor2_shape_reconstruction" output="screen">
+    <param name="shape_config" value="$(arg shape_config)" />
+    <param name="image_topic" value="$(arg image_topic)" />
+    <param name="reference_image_topic" value="$(arg reference_image_topic)" />
+  </node>
+</launch>

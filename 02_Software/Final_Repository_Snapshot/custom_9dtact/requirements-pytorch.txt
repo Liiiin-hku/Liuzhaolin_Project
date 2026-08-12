@@ -1,0 +1,5 @@
+# These versions support Python 3.8 and are compatible with each other.
+# Select the CPU or CUDA wheel index at installation time; see
+# ../docs/01_INSTALLATION_UBUNTU20.md.
+torch==2.0.1
+torchvision==0.15.2

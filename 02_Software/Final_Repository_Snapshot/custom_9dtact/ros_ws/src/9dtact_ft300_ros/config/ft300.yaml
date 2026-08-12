@@ -1,0 +1,27 @@
+# External driver contract: geometry_msgs/WrenchStamped in N and N*m.
+wrench_topic: /robotiq_ft_wrench
+expected_wrench_frame: ""
+output_frame: tactile_sensor
+require_nonzero_stamp: true
+startup_timeout: 15.0
+max_wrench_age: 0.5
+
+# Internal software zeroing removes the current unloaded bias only.
+use_internal_zero: true
+zero_samples: 100
+zero_std_max: [0.05, 0.05, 0.05, 0.005, 0.005, 0.005]
+
+# Use 1 when a centered downward press produces positive raw Fz; use -1
+# when it produces negative raw Fz. All other component signs remain unchanged.
+fz_raw_press_sign: 1
+rotation: [1.0, 0.0, 0.0,
+           0.0, 1.0, 0.0,
+           0.0, 0.0, 1.0]
+translation: [0.0, 0.0, 0.0]
+
+sync_slop: 0.02
+press_threshold: -0.3
+save_delta: 0.02
+min_save_interval: 0.05
+wrench_min: [-3.0, -3.0, -12.0, -0.2, -0.2, -0.05]
+wrench_max: [3.0, 3.0, 0.0, 0.2, 0.2, 0.05]

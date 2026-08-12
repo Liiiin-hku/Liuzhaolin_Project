@@ -1,0 +1,4 @@
+# Additional dependency used by force_estimation/train.py.
+# Install requirements-pytorch.txt from the appropriate PyTorch CPU or CUDA
+# package index before starting training.
+tensorboard==2.13.0

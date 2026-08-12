@@ -1,0 +1,29 @@
+<launch>
+  <arg name="shape_config" default="configs/shape_sensor_1.yaml" />
+  <arg name="force_config" default="configs/force_sensor_1.yaml" />
+  <arg name="camera_channel" default="-1" />
+  <arg name="headless" default="false" />
+  <arg name="ft300_wrench_topic" default="/robotiq_ft_wrench" />
+  <arg name="predicted_wrench_topic" default="/predicted_wrench" />
+  <arg name="expected_ft300_frame" default="" />
+  <arg name="output_frame" default="tactile_sensor" />
+  <arg name="csv_path" default="" />
+
+  <include file="$(find nine_dtact_ft300_ros)/launch/force_estimation.launch">
+    <arg name="shape_config" value="$(arg shape_config)" />
+    <arg name="force_config" value="$(arg force_config)" />
+    <arg name="camera_channel" value="$(arg camera_channel)" />
+    <arg name="headless" value="$(arg headless)" />
+    <arg name="predicted_wrench_topic" value="$(arg predicted_wrench_topic)" />
+  </include>
+  <!-- Start the external FT300 driver separately; this node compares physical units. -->
+  <node pkg="nine_dtact_ft300_ros" type="wrench_comparison_node.py" name="compare_prediction_with_ft300" output="screen">
+    <rosparam command="load" file="$(find nine_dtact_ft300_ros)/config/ft300.yaml" />
+    <param name="ft300_wrench_topic" value="$(arg ft300_wrench_topic)" />
+    <param name="predicted_wrench_topic" value="$(arg predicted_wrench_topic)" />
+    <param name="expected_ft300_frame" value="$(arg expected_ft300_frame)" />
+    <param name="output_frame" value="$(arg output_frame)" />
+    <param name="expected_prediction_frame" value="$(arg output_frame)" />
+    <param name="csv_path" value="$(arg csv_path)" if="$(eval arg('csv_path') != '')" />
+  </node>
+</launch>

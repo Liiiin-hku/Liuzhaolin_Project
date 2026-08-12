@@ -1,0 +1,32 @@
+<launch>
+  <arg name="sensor_id" default="1" />
+  <arg name="shape_config" default="configs/shape_sensor_1.yaml" />
+  <arg name="camera_channel" default="-1" />
+  <arg name="wrench_topic" default="/robotiq_ft_wrench" />
+  <arg name="image_topic" default="/rectify_crop_image" />
+  <arg name="reference_image_topic" default="/rectify_crop_ref_image" />
+  <arg name="dataset_root" default="" />
+  <arg name="object_id" default="1" />
+  <arg name="headless" default="false" />
+  <arg name="auto_start" default="false" />
+
+  <!-- Start the external FT300 driver separately; it must publish WrenchStamped. -->
+  <node pkg="nine_dtact_ft300_ros" type="sensor_node.py" name="tactile_image_publisher" output="screen">
+    <param name="shape_config" value="$(arg shape_config)" />
+    <param name="camera_channel" value="$(arg camera_channel)" />
+    <param name="image_topic" value="$(arg image_topic)" />
+    <param name="reference_image_topic" value="$(arg reference_image_topic)" />
+    <param name="headless" value="$(arg headless)" />
+  </node>
+  <node pkg="nine_dtact_ft300_ros" type="ft300_data_collector_node.py" name="ft300_data_collector" output="screen">
+    <rosparam command="load" file="$(find nine_dtact_ft300_ros)/config/ft300.yaml" />
+    <param name="sensor_id" value="$(arg sensor_id)" />
+    <param name="wrench_topic" value="$(arg wrench_topic)" />
+    <param name="image_topic" value="$(arg image_topic)" />
+    <param name="reference_image_topic" value="$(arg reference_image_topic)" />
+    <param name="dataset_root" value="$(arg dataset_root)" if="$(eval arg('dataset_root') != '')" />
+    <param name="object_id" value="$(arg object_id)" />
+    <param name="headless" value="$(arg headless)" />
+    <param name="auto_start" value="$(arg auto_start)" />
+  </node>
+</launch>

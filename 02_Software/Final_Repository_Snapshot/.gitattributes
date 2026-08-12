@@ -1,0 +1,39 @@
+* text=auto
+
+*.py text eol=lf
+*.PY text eol=lf
+*.yaml text eol=lf
+*.YAML text eol=lf
+*.yml text eol=lf
+*.YML text eol=lf
+*.md text eol=lf
+*.MD text eol=lf
+*.sh text eol=lf
+*.SH text eol=lf
+*.ps1 text eol=crlf
+*.PS1 text eol=crlf
+
+*.npy binary
+*.NPY binary
+*.pt binary
+*.PT binary
+*.pth binary
+*.PTH binary
+*.png binary
+*.PNG binary
+*.jpg binary
+*.JPG binary
+*.jpeg binary
+*.JPEG binary
+*.pdf binary
+*.PDF binary
+*.stl binary
+*.STL binary
+*.step binary
+*.STEP binary
+*.sldprt binary
+*.SLDPRT binary
+*.sldasm binary
+*.SLDASM binary
+*.zip binary
+*.ZIP binary

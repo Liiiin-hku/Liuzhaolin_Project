@@ -1,0 +1,26 @@
+<launch>
+  <arg name="shape_config" default="configs/shape_sensor_1.yaml" />
+  <arg name="force_config" default="configs/force_sensor_1.yaml" />
+  <arg name="camera_channel" default="-1" />
+  <arg name="representation_topic" default="/deformation_representation" />
+  <arg name="image_topic" default="/rectify_crop_image" />
+  <arg name="reference_image_topic" default="/rectify_crop_ref_image" />
+  <arg name="predicted_wrench_topic" default="/predicted_wrench" />
+  <arg name="predicted_normalized_topic" default="/predicted_wrench_normalized" />
+
+  <node pkg="nine_dtact_ft300_ros" type="force_estimation_node.py" name="shape_force_estimator" output="screen">
+    <param name="force_config" value="$(arg force_config)" />
+    <param name="representation_topic" value="$(arg representation_topic)" />
+    <param name="image_topic" value="$(arg image_topic)" />
+    <param name="reference_image_topic" value="$(arg reference_image_topic)" />
+    <param name="predicted_wrench_topic" value="$(arg predicted_wrench_topic)" />
+    <param name="predicted_normalized_topic" value="$(arg predicted_normalized_topic)" />
+    <param name="publish_normalized" value="true" />
+  </node>
+  <node pkg="nine_dtact_ft300_ros" type="shape_force_node.py" name="shape_force_demo" output="screen">
+    <param name="shape_config" value="$(arg shape_config)" />
+    <param name="camera_channel" value="$(arg camera_channel)" />
+    <param name="representation_topic" value="$(arg representation_topic)" />
+    <param name="predicted_normalized_topic" value="$(arg predicted_normalized_topic)" />
+  </node>
+</launch>

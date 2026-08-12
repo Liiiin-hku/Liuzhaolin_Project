@@ -1,0 +1,13 @@
+name: nine-dtact-ft300
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+      - -r requirements-core.txt
+      - -r requirements-training.txt
+
+# PyTorch is intentionally installed after environment creation so the user can
+# choose the CPU or CUDA wheel index. ROS Noetic dependencies are installed with
+# apt and are most reliable in a venv created with --system-site-packages.

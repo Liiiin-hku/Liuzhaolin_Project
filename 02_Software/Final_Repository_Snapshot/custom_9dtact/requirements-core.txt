@@ -1,0 +1,9 @@
+# Core camera calibration and 3D shape reconstruction dependencies.
+# Target platform: Ubuntu 20.04, Python 3.8.
+ml-collections==0.1.1
+numpy==1.23.5
+open3d==0.13.0
+opencv-python==4.8.0.76
+PyYAML==6.0.1
+scipy==1.10.1
+setuptools==68.0.0

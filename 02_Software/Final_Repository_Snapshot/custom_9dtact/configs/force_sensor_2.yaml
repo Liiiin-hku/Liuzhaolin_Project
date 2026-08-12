@@ -1,0 +1,51 @@
+# Sensor 2 six-axis force-estimation configuration.
+sensor_id: 2
+model_list:
+  - - Resnet
+    - 18
+  - - Densenet
+    - 169
+model_choice: 1
+image_type: RGB
+train_mode: true
+test_object: true
+mixed_image: true
+
+data_dir: ../Dataset_sensor_2
+save_dir: ../saved_models_sensor_2
+
+weights:
+  - - null
+    - null
+  - - null
+    - null
+eval_batch: 32
+
+cuda_index: 0
+batch_size: 64
+num_epoch: 200
+learning_rate: 5.0e-4
+regularization: false
+weight_decay: 0
+
+# Height and width must equal shape_sensor_2.yaml camera_calibration.crop_size.
+img_size:
+  - 280
+  - 380
+
+# Physical label ranges: Fx, Fy, Fz in N; Tx, Ty, Tz in N*m.
+wrench_min:
+  - -3.0
+  - -3.0
+  - -12.0
+  - -0.2
+  - -0.2
+  - -0.05
+wrench_max:
+  - 3.0
+  - 3.0
+  - 0.0
+  - 0.2
+  - 0.2
+  - 0.05
+wrench_frame: tactile_sensor

@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+.conda/
+.env
+.env.*
+
+# Runtime state
+custom_9dtact/.runtime/
+custom_9dtact/tmp/
+custom_9dtact/shape_reconstruction/shape_config.yaml
+custom_9dtact/force_estimation/force_config.yaml
+.runtime/
+tmp/
+
+# Catkin build products
+custom_9dtact/ros_ws/build/
+custom_9dtact/ros_ws/devel/
+custom_9dtact/ros_ws/install/
+custom_9dtact/ros_ws/logs/
+custom_9dtact/ros_ws/.catkin_tools/
+
+# Datasets
+custom_9dtact/Dataset/
+custom_9dtact/Dataset_sensor_1/
+custom_9dtact/Dataset_sensor_2/
+Dataset_sensor_1/
+Dataset_sensor_2/
+
+# Models and training logs
+Original/saved_models/
+custom_9dtact/saved_models/
+custom_9dtact/saved_models_sensor_1/
+custom_9dtact/saved_models_sensor_2/
+custom_9dtact/wandb/
+custom_9dtact/runs/
+saved_models_sensor_1/
+saved_models_sensor_2/
+
+# Generated bundles and reports
+custom_9dtact/training_bundle_sensor_*/
+custom_9dtact/training_bundle_sensor_*.zip
+custom_9dtact/output/
+training_bundle_sensor_*/
+training_bundle_sensor_*.zip
+output/
+
+# Local experiment backups (kept outside the repository)
+7.25修改_修改前备份_*/
+7.25_modified_prechange_backup_*/
+_codex_wip_backup_*/
+custom_9dtact/shape_reconstruction/calibration/**/manual_backup_*/
+custom_9dtact/shape_reconstruction/calibration/**/*_old_*/
+custom_9dtact/shape_reconstruction/calibration/**/*_failed_*/
+custom_9dtact/shape_reconstruction/calibration/**/*_wrong_camera_*/
+
+# Temporary
+*.log
+*.tmp
+*.pyc

@@ -1,0 +1,19 @@
+method: manual_7x9_rbf_v2
+sensor_id: 2
+camera_channel: 2
+image_width: 640
+image_height: 480
+grid_rows: 7
+grid_cols: 9
+grid_distance_mm: 2.5
+center_row: 237.0
+center_col: 319.0
+mm_per_pixel: 0.05949821080323876
+invalid_map_ratio: 0.32837890625
+statistics:
+  horizontal_median_px: 49.10189677704217
+  vertical_median_px: 47.069090651311384
+  horizontal_cv: 0.09715092652323523
+  vertical_cv: 0.09037299511597818
+  center_x: 319.0
+  center_y: 237.0

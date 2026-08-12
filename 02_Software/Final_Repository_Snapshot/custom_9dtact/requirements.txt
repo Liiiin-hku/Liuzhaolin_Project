@@ -1,0 +1,5 @@
+# Backward-compatible core plus training-tool environment.
+# Install requirements-pytorch.txt separately from the CPU or CUDA package
+# index selected for the target Ubuntu computer.
+-r requirements-core.txt
+-r requirements-training.txt

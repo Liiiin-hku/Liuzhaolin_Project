@@ -1,0 +1,6 @@
+dataset_name,sensor_id,file_count,sample_count,image_count,wrench_count,total_size_bytes,format,label_units,data_status,authority_or_manifest,notes
+Custom active calibration,1,12,N/A,4,N/A,2961352,"NPY, PNG, Markdown",N/A,Included,04_Data_and_Models/02_Calibration_Data/CALIBRATION_FILE_MANIFEST.csv,"Active calibration evidence; not a force-training dataset."
+Custom active calibration,2,26,N/A,15,N/A,4546512,"NPY, PNG, CSV, YAML, Markdown",N/A,Included,04_Data_and_Models/02_Calibration_Data/CALIBRATION_FILE_MANIFEST.csv,"Includes Sensor 2 manual-point provenance; equivalent independent Sensor 1 provenance is absent."
+Project calibration documentation images,1 and 2,4,N/A,4,0,5369378,"JPG, PNG",N/A,Included,04_Data_and_Models/02_Calibration_Data/Documentation_Images,"Calibration-process evidence; not raw force-training data."
+Shape Reconstruction result screenshot,Project evidence,1,1,1,0,362712,PNG,N/A,Included,04_Data_and_Models/03_Processed_Data/Shape_Reconstruction_Results,"Qualitative result screenshot; no quantitative ground-truth metric asserted."
+Upstream 9DTact format/reference material,Upstream,N/A,N/A,N/A,N/A,N/A,"NPY, PNG and source files",N/A,Available in immutable software snapshot,02_Software/Final_Repository_Snapshot/Original,"Third-party format/reference material; not custom Sensor 1/2 training or performance evidence."
