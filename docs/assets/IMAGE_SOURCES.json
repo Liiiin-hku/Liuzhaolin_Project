@@ -1,0 +1,38 @@
+[
+  {
+    "display": "docs/assets/sensor-prototypes.jpg",
+    "original": "03_Hardware/08_Renders_and_Photos/Completed_Hardware/completed_dual_custom_sensors.jpg",
+    "operation": "resize only; JPEG display copy; metadata stripped",
+    "original_sha256": "9ad80b064d03d74f02efb7f946442e12a19fa8622a0ac83fe0ac9737cfff8da8"
+  },
+  {
+    "display": "docs/assets/sensor-exploded.jpg",
+    "original": "03_Hardware/08_Renders_and_Photos/Assembly_and_Design/sensor_exploded_view_annotated.jpg",
+    "operation": "resize only; JPEG display copy; metadata stripped",
+    "original_sha256": "63ecef1cc2777c4a125a734b9db2fed50cc35b60acd2eb28778ab9ed4b7acc87"
+  },
+  {
+    "display": "docs/assets/camera-led-integration.jpg",
+    "original": "03_Hardware/07_PCB_and_Electronics/Photos/sensor_electronics_components.jpg",
+    "operation": "resize only; JPEG display copy; metadata stripped",
+    "original_sha256": "8fe513b7ab02fa9a2e60d9a8b885eab474e902e3d4c2db0d29a29a176b6334b6"
+  },
+  {
+    "display": "docs/assets/ft300-platform.jpg",
+    "original": "03_Hardware/08_Renders_and_Photos/Test_Setups/sensor_ft300_calibration_fixture.jpg",
+    "operation": "resize only; JPEG display copy; metadata stripped",
+    "original_sha256": "8012360661a60c4bd08a90a70e13fc570db9b8c1e0b18f0ab0b4e78c217a6ae2"
+  },
+  {
+    "display": "docs/assets/gripper-cad.jpg",
+    "original": "03_Hardware/08_Renders_and_Photos/Assembly_and_Design/custom_gripper_assembly_render.png",
+    "operation": "resize only; JPEG display copy; metadata stripped",
+    "original_sha256": "2424a1596b20bba572839eff15483661d8b2eeb20d8411ee61bdb231dd442341"
+  },
+  {
+    "display": "docs/assets/silicone-manufacturing.jpg",
+    "original": "03_Hardware/09_Manufacturing_Notes/Process_Photos/multi_layer_casting_molds.jpg",
+    "operation": "resize only; JPEG display copy; metadata stripped",
+    "original_sha256": "312e085961e9c596c978e5ad3d5b333ab7a2b4552f2fa9ba6279f5830b65b14d"
+  }
+]

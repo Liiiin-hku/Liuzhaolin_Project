@@ -1,7 +1,9 @@
-# Copyright and Access Notes
+# 文献版权与访问
 
-- The files in this directory were obtained from public publisher, author/institutional, arXiv, official vendor, or official project-repository locations recorded in `REFERENCE_DOWNLOAD_MANIFEST.csv`.
-- No subscription control or paywall was bypassed. Thirteen bibliography records remain link-only because no public PDF was confirmed in the audit.
-- Copyright remains with the respective authors, publishers, vendors, or repository licensors. Retain the DOI/official URL and source license when using or redistributing a file.
-- An accepted manuscript or preprint may not be identical to the publisher version; cite the dissertation's DOI record unless a different source is explicitly required.
-- For classroom handover or redistribution beyond the permitted source terms, review the license or institutional access rules for each item.
+全文与索引分别管理。可公开下载不等于可再次公开分发。
+
+- REF_10 的 PDF 明确声明 CC BY 4.0；REF_15 的机构封面及出版正文明确声明 CC BY。两个文件原样保留，其作者、标题、DOI 和许可说明见 [素材权属](../../docs/RIGHTS_AND_ATTRIBUTION.md)。
+- REF_30 是 9DTact 官方项目记录，保留原 README 与 LICENSE。
+- 其他 18 份已下载但再分发权利未闭合的论文/厂商 PDF 不包含在当前展示版本；所有 33 项书目保留 DOI、官方来源或书目记录。
+- 历史下载清单保留来源和原文件哈希用于追溯；当前文件是否包含请以 [文献导航](REFERENCE_LIBRARY_INDEX.md) 和根清单为准。
+- 第三方资料按其自身许可使用，不能继承本项目其他目录的许可。

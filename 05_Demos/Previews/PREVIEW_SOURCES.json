@@ -1,0 +1,32 @@
+[
+  {
+    "preview": "05_Demos/Previews/hardware-preview.mp4",
+    "source": "05_Demos/Successful/custom_tactile_sensor_hardware_showcase.mp4",
+    "source_sha256": "01a51913b11ca51e3fd2ff0e420737365229f36240c6ef0213dc7ae7839ace69",
+    "source_start_seconds": 0,
+    "duration_seconds": 22,
+    "processing": "contiguous excerpt; resized to 960 px wide; 24 fps encoding; H.264; audio and metadata removed; no generated or retouched content",
+    "sha256": "5edc9523a227d8e19b3ea453d39c8307f5d4dd5b1a7517ecb1624e78abe9c0c1",
+    "bytes": 1265963
+  },
+  {
+    "preview": "05_Demos/Previews/shape-preview.mp4",
+    "source": "05_Demos/Successful/shape_reconstruction_pressing_demo.mp4",
+    "source_sha256": "dfb8afeda2eb5e7c96937eca5ce0e357a2174a850bb877865dba12219bcd040a",
+    "source_start_seconds": 48,
+    "duration_seconds": 28,
+    "processing": "contiguous excerpt; resized to 960 px wide; 24 fps encoding; H.264; audio and metadata removed; no generated or retouched content",
+    "sha256": "887bc1974694395930e2a095b9ca046658f7ef2da651c72b32c816e5be1dbd29",
+    "bytes": 1062118
+  },
+  {
+    "preview": "05_Demos/Previews/vector-preview.mp4",
+    "source": "05_Demos/Successful/realtime_6d_force_visualization_demo.mp4",
+    "source_sha256": "51163d86f7fd83a5d4a7289ddbbc0df4c85174a6534be23b0b163559f86c9cfd",
+    "source_start_seconds": 48,
+    "duration_seconds": 28,
+    "processing": "contiguous excerpt; resized to 960 px wide; 24 fps encoding; H.264; audio and metadata removed; no generated or retouched content",
+    "sha256": "71916123e641d774f3cc655b4c49f929a56435c9885d5e4cb623d83ac95020d9",
+    "bytes": 683873
+  }
+]

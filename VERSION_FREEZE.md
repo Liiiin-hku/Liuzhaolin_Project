@@ -1,57 +1,41 @@
-# Version Freeze
+# 版本来源与作品集整理版本
 
-## Package identity
+## 两层版本身份
 
-- Project: 9DTact + Robotiq FT300 Custom Tactile Sensor Project
-- Showcase cleanup date: 2026-08-13 (Asia/Singapore)
-- Final handover root: `<DESKTOP>/Liuzhaolin_Project`
-- Inventory: `SUBMISSION_MANIFEST.csv`
-- Archive: `<DESKTOP>/Liuzhaolin_Project.zip`
-- Archive checksum: `<DESKTOP>/Liuzhaolin_Project_SHA256.txt`
+- 本仓库：`Liiiin-hku/Liuzhaolin_Project`，默认分支 `main`。
+- 原始外层交接提交：`3d3de84763bf30712eb6fb94a00f48f3ecc1210e`。
+- 作品集整理日期：2026-09-11；外层文档与展示资源版本 `portfolio-2026-09-11`（文档版本名，不是 Git tag）。
+- 当前外层文件清单：[SUBMISSION_MANIFEST.csv](SUBMISSION_MANIFEST.csv)。该清单记录当前工作树的实际文件大小和 SHA-256，LFS 视频按完整文件计算。
 
-## Authoritative software
+新版资料包不与原教师交接包逐字节相同；旧 ZIP 与旧校验值不适用于此版本。本次不创建新的交接压缩包。
 
-- Snapshot: `02_Software/Final_Repository_Snapshot/`
-- Public repository: `https://github.com/Liiiin-hku/9DTact_FT300_Custom_Sensor_Project`
-- Default/frozen branch: `submission/final-sensor-code`
-- Commit: `98ebb7da0010df27ef634f9868e557d77fa73ec5`
-- Commit subject: `finalize: complete 9DTact FT300 graduation project package`
-- Release tag: No release tag available
-- Submodules: 0
-- Git LFS files: 0
-- Upstream `Original/`: 138 files with retained SHA-256 inventory
+## 冻结软件来源
 
-The code snapshot is kept byte-for-byte consistent with the public frozen commit.
+- [本仓库完整软件快照](02_Software/Final_Repository_Snapshot/)
+- [来源仓库固定提交](https://github.com/Liiiin-hku/9DTact_FT300_Custom_Sensor_Project/commit/98ebb7da0010df27ef634f9868e557d77fa73ec5)
+- 来源分支：`submission/final-sensor-code`；commit：`98ebb7da0010df27ef634f9868e557d77fa73ec5`。
+- 来源 Git tree：`445e66e20cff0a31f2e4b0d39f1afa5cca17cdbb`。
+- 本资料包冻结子树：`be4d19e64ce433d0b2a6341ba59b7a797d27c7bf`，共 297 个文件，其中 `Original/` 为 138 个文件。
 
-## Authoritative academic deliverables
+2026-09-11 只读比对来源仓库固定提交：297 个路径一致，206 个文件的 Git blob 完全相同，90 个文件仅有已存在的 CRLF/LF 差异；快照内 `SUBMISSION_MANIFEST.csv` 的 296 条路径一致，其中 90 行的 size/SHA-256 对应这些换行差异。因此原外层文档中“与远端 commit 逐字节一致”的说法不准确。
 
-| Asset | Path | SHA-256 |
-|---|---|---|
-| Final dissertation source | `01_Academic/01_Thesis/Final/Dissertation_LIU Zhaolin.docx` | `5ebdf27357be616c875c912429c64ba284421323a752e388116574b4b2b3638b` |
-| Final dissertation render | `01_Academic/01_Thesis/Final/Dissertation_LIU Zhaolin.pdf` | `c45d84d223785a19720dac332483fbd8703991d900d34abbf0db85b455a5a383` |
-| Final defense source | `01_Academic/03_Defense/Final/Final Report.pptx` | `f21215fa9b5e4d21655561fd0f3648784c1a601207017a9dadc642526f2709f2` |
-| Final defense PDF | `01_Academic/03_Defense/Final/final report.pdf` | `a1eab9b8abe9879b5d29b1fd3d2019286bbb90eb983ae97e23049ed3bedb468c` |
+本次**没有修改冻结子树中的任何文件**，也没有为了统一换行改写 `Original/`。代码与配置的来源可追溯，但应按上述字节差异理解。[比对清单](docs/SOFTWARE_SOURCE_COMPARISON.csv) · [Original 冻结清单](02_Software/Repository_Version_Info/ORIGINAL_FROZEN_SHA256.csv)
 
-The compact package retains six stage/progress PDFs and four editable stage/interim decks. Related project videos are independently indexed under `05_Demos/`.
+## 论文、硬件与数据
 
-## Authoritative hardware and electronics
+| 资产 | 当前文件与完整性 |
+|---|---|
+| 论文展示 PDF | [39 页 PDF](01_Academic/01_Thesis/Final/Dissertation_LIU%20Zhaolin.pdf)；SHA-256 `e578ed6644dbb0c75e4d61198f1136a02b066b1e5bdf333bc7f49ba4ea824379` |
+| 原始答辩 PDF/PPTX | [答辩资料](01_Academic/03_Defense/Final/)；本次保持文件字节不变 |
+| CAD、STL、DXF、PCB、BOM | [硬件导航](03_Hardware/README.md)；原始工程文件和引用路径不变 |
+| 相机与深度数组 | 仍在冻结快照内，活动状态见 [验证说明](docs/VALIDATION_STATUS.md) |
+| 原始图片及三个视频 | 原路径和文件字节不变；展示副本有独立来源映射 |
+| 第三方全文 | 仅保留明确声明再分发许可的两份 CC BY PDF 与上游项目记录；完整书目见 [文献库](01_Academic/04_Reference_Library/REFERENCE_LIBRARY_INDEX.md) |
 
-- Native SolidWorks sources: `03_Hardware/01_CAD_Source/`
-- STL authority and source mapping: `03_Hardware/03_Print_Files_STL/`
-- Project BOM: `03_Hardware/05_BOM/Mechanical/Project_Master_BOM.xlsx`
-- Electronics BOM: `03_Hardware/05_BOM/Electronics/BOM_LED-PCB.xlsx`
-- PCB/Gerber/placement data: `03_Hardware/07_PCB_and_Electronics/`
-- Project photographs: `03_Hardware/08_Renders_and_Photos/`
-- Manufacturing record: `03_Hardware/09_Manufacturing_Notes/`
+论文展示 PDF 移除封面学号和 PDF 元数据，39 页渲染比较仅第 1 页对应区域不同。可编辑原论文和教师评审表不在当前展示版本。
 
-## Authoritative calibration and demonstrations
+## 维护与验证
 
-- Active Sensor 1/Sensor 2 calibration: frozen software snapshot under `custom_9dtact/shape_reconstruction/calibration/`.
-- Hybrid depth-LUT SHA-256: `19c9f3514dce402d8e710079757394b5445b74e7afbdd2459de43798676cb4ff` for the upstream source and both active targets.
-- Calibration evidence: `04_Data_and_Models/02_Calibration_Data/`.
-- Shape Reconstruction result: `04_Data_and_Models/03_Processed_Data/Shape_Reconstruction_Results/`.
-- Three successful qualitative demonstrations: `05_Demos/Successful/`.
+外层变更后更新根清单，排除 `.git`、缓存、临时文件、私有资料及清单自身，不覆盖软件内部原始清单。软件变更必须单独记录来源与验证，不能继续宣称快照未变。
 
-## Change control
-
-Any content change requires regeneration of `SUBMISSION_MANIFEST.csv`, the ZIP archive, and its detached SHA-256 file. Any software change requires a new Git commit identity rather than continued use of the frozen commit above.
+[维护记录](docs/MAINTENANCE.md) · [技术验证](docs/VALIDATION_STATUS.md) · [许可与来源](docs/RIGHTS_AND_ATTRIBUTION.md)

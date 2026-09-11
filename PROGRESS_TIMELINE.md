@@ -1,19 +1,16 @@
-# Project Progress Timeline
+# 项目进展时间线
 
-Dates are taken from retained document titles, internal document dates, and Git history.
+日期来自保留文件标题、内部日期及版本记录，不表示每项均经独立性能验收。
 
-| Date | Milestone | Evidence retained |
+| 时间 | 工作进展 | 资料 |
 |---|---|---|
-| 2025-10-05 | Initial tactile-sensing survey | Stage PDF and editable deck |
-| 2025-11-02 | Concept comparison and refinement | Stage PDF and editable deck |
-| 2026-01-18 | Fabrication and test-environment development | Stage PDF; project hardware video retained separately |
-| 2026-02-01 | Mixed-image and six-axis-force workflow development | Stage PDF; project demonstration videos retained separately |
-| 2026-04-19 | Interim review | Interim PDF and editable deck |
-| 2026-07-19 | Late-stage custom tactile-sensor progress | Stage PDF and editable deck |
-| 2026-07-25 | Dual-sensor calibration and hybrid depth-LUT integration | Calibration assets and frozen software documentation |
-| 2026-07-31 | Final dissertation | Final DOCX/PDF pair |
-| 2026-08-07 to 2026-08-12 | Final defense preparation | Final PDF and editable defense deck |
-| 2026-08-12 | Final software freeze | Public Git branch and immutable commit |
-| 2026-08-13 | Final teacher showcase package | Streamlined directory, completed Rubric, Manifest, ZIP, and checksum |
+| 2025-10 至 2025-11 | 触觉感知调研与方案比较 | [阶段记录](01_Academic/02_Stage_Reports/) |
+| 2026-01 | 制造、装配和实验环境搭建 | [制造记录](03_Hardware/09_Manufacturing_Notes/ASSEMBLY_AND_MANUFACTURING_NOTES.md)、[实物演示](05_Demos/README.md) |
+| 2026-02 | 形貌及六轴向量工作流演示 | [阶段记录](01_Academic/02_Stage_Reports/2026.2.1.pdf)；数据源边界见视频导航 |
+| 2026-04 | 中期设计和后续实验计划 | [中期 PDF](01_Academic/02_Stage_Reports/interm%20report.pdf) |
+| 2026-07 | 后期样机、手动标定与混合深度 LUT 实验 | [后期报告](01_Academic/02_Stage_Reports/2026.7.19.pdf)、[标定状态](docs/VALIDATION_STATUS.md) |
+| 2026-07-31 | 最终论文内部日期 | [论文展示版](01_Academic/01_Thesis/Final/Dissertation_LIU%20Zhaolin.pdf) |
+| 2026-08 | 答辩与软件冻结、原始交接整理 | [答辩](01_Academic/03_Defense/Final/final%20report.pdf)、[版本来源](VERSION_FREEZE.md) |
+| 2026-09-11 | 企业作品集整理与证据复核 | [维护记录](docs/MAINTENANCE.md) |
 
-The retained milestones show the progression from tactile-sensing research and mechanical fabrication through dual-sensor calibration, Shape Reconstruction, FT300 integration, six-axis force-estimation software, ROS packaging, dissertation, and final defense.
+已形成结构、样机、制造、图像校正和 FT300 平台的工程链路。自制传感器的规范六维力训练集、正式 checkpoint、独立精度结果和实物夹爪验证仍缺完整记录。

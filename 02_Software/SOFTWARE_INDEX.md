@@ -1,46 +1,36 @@
-# Software Asset Index
+# 软件复现入口
 
-## Frozen public authority
+[返回首页](../README.md) · [验证状态](../docs/VALIDATION_STATUS.md)
 
-- Snapshot: `Final_Repository_Snapshot/`
-- Repository: `https://github.com/Liiiin-hku/9DTact_FT300_Custom_Sensor_Project`
-- Visibility: Public
-- Default/frozen branch: `submission/final-sensor-code`
-- Commit: `98ebb7da0010df27ef634f9868e557d77fa73ec5`
-- Release tag: No release tag available
-- Upstream `Original/`: 138 files with retained SHA-256 inventory
+完整软件保存在本仓库的 [Final_Repository_Snapshot](Final_Repository_Snapshot/)，可从这里进入，无需把关联仓库当成唯一入口。
 
-## Contribution structure
+来源：关联仓库 [9DTact_FT300_Custom_Sensor_Project](https://github.com/Liiiin-hku/9DTact_FT300_Custom_Sensor_Project)，分支 `submission/final-sensor-code`，固定 commit `98ebb7da0010df27ef634f9868e557d77fa73ec5`。本次仅只读核对该来源。
 
-- `Original/`: immutable upstream 9DTact snapshot.
-- `custom_9dtact/`: dual-sensor configuration, camera/sensor calibration, Shape Reconstruction, Robotiq FT300 collection, force estimation, tests, and ROS Noetic integration.
-- `docs/`: numbered installation and full-workflow documentation.
-- `scripts/`: installation, validation, and packaging tools.
+## 阅读与操作顺序
 
-## Environment
-
-Ubuntu 20.04, Python 3.8, ROS Noetic, PyTorch 2.0.1, and torchvision 0.15.2 form the documented baseline. Core pip, PyTorch, Conda, and ROS dependencies are separated in the package files and installation guide.
-
-## Main routes
-
-| Workflow | Entry point inside `Final_Repository_Snapshot/` |
+| 工作流 | 快照内真实文档 |
 |---|---|
-| Installation | `README.md`, `docs/01_INSTALLATION_UBUNTU20.md` |
-| Sensor selection | `custom_9dtact/tools/activate_sensor.py` |
-| Setup verification | `custom_9dtact/tools/check_sensor_setup.py` |
-| Manual camera calibration | `custom_9dtact/shape_reconstruction/manual_camera_calibration_v2.py` |
-| Sensor calibration | `custom_9dtact/shape_reconstruction/_2_Sensor_Calibration.py` |
-| Shape Reconstruction | `custom_9dtact/shape_reconstruction/_3_Shape_Reconstruction.py` |
-| FT300 topic check | `custom_9dtact/tools/check_ft300_topic.py` |
-| Synchronized collection | `custom_9dtact/data_collection/collect_data_ft300.py` |
-| Dataset integrity | `custom_9dtact/tools/check_dataset_integrity.py` |
-| Model training | `custom_9dtact/force_estimation/train.py` |
-| Tactile-only force inference | `custom_9dtact/force_estimation/_1_Force_Estimation.py` |
-| ROS workspace | `custom_9dtact/ros_ws/` |
-| Offline verification | `scripts/verify_submission.py` |
+| 安装环境 | [Ubuntu 20.04 安装](Final_Repository_Snapshot/docs/01_INSTALLATION_UBUNTU20.md) |
+| 传感器选择与配置 | [配置说明](Final_Repository_Snapshot/docs/02_SENSOR_CONFIGURATION.md) |
+| 相机图像校正 | [相机标定](Final_Repository_Snapshot/docs/03_CAMERA_CALIBRATION.md) |
+| 深度标定与形貌 | [传感器标定](Final_Repository_Snapshot/docs/04_SENSOR_CALIBRATION.md)；[形貌重建](Final_Repository_Snapshot/docs/05_SHAPE_RECONSTRUCTION.md) |
+| FT300 数据源 | [FT300 设置](Final_Repository_Snapshot/docs/06_FT300_SETUP.md) |
+| 采集与数据处理 | [同步采集](Final_Repository_Snapshot/docs/07_DATA_COLLECTION.md)；[数据处理](Final_Repository_Snapshot/docs/08_DATA_PROCESSING.md) |
+| 训练与力推理 | [模型训练](Final_Repository_Snapshot/docs/09_MODEL_TRAINING.md)；[推理说明](Final_Repository_Snapshot/docs/10_FORCE_ESTIMATION.md) |
+| ROS 启动 | [ROS 工作流](Final_Repository_Snapshot/docs/11_ROS_WORKFLOW.md)；[问题排查](Final_Repository_Snapshot/docs/12_TROUBLESHOOTING.md) |
 
-## Validation and attribution
+项目记录的基线为 Ubuntu 20.04、Python 3.8、ROS Noetic、PyTorch 2.0.1 和 torchvision 0.15.2。依赖按原安装文档处理，本次没有升级项目依赖。
 
-The package passed the included static verification and offline unit tests. Real camera, FT300, ROS, and trained-model performance are evaluated only in their corresponding hardware/runtime environment.
+## 可以先做的离线检查
 
-The repository retains `LICENSE`, `NOTICE.md`, and `Original/LICENSE`. The upstream snapshot is clearly separated from the project-specific additions.
+从仓库根目录进入快照后，在具备 NumPy 等依赖的审查环境中执行：
+
+```bash
+cd 02_Software/Final_Repository_Snapshot
+python -B -m unittest discover -s custom_9dtact/tests -v
+python -B scripts/verify_submission.py --strict-package
+```
+
+硬件运行前一次选择一个 Sensor，核实相机设备编号、标定来源、驱动和 topic。FT300 驱动不随本项目提供；本仓库缺可直接复现自制六维力结果所需的正式模型和训练集。
+
+`Original/` 与其 LICENSE 保持不变；项目工具位于 `custom_9dtact/`。完整许可见 [LICENSE](Final_Repository_Snapshot/LICENSE)、[NOTICE](Final_Repository_Snapshot/NOTICE.md) 与 [外层权属说明](../docs/RIGHTS_AND_ATTRIBUTION.md)。
