@@ -26,3 +26,9 @@
 - Benjamin Ward-Cherrier et al. *The TacTip Family: Soft Optical Tactile Sensors with 3D-Printed Biomimetic Morphologies.* Soft Robotics 5(2), 216–227 (2018). [DOI](https://doi.org/10.1089/soro.2017.0052)。所保留出版 PDF 的机构封面标为 CC BY，文中说明允许署名后的分发与复制；保留原许可、署名与未修改文件，具体使用遵循该 PDF 的原声明。
 
 逐项入口见 [文献库](../01_Academic/04_Reference_Library/REFERENCE_LIBRARY_INDEX.md)。源站可下载、开放获取标签和再分发许可是不同事项；尚未明确再分发权利的全文不包含在当前展示版本。
+
+## 阶段报告中的引用媒体
+
+2025 年两轮调研报告改为 [技术摘要与来源入口](../01_Academic/02_Stage_Reports/README.md)，原 PDF/PPTX 中未确认许可的第三方产品图、他人演示及嵌入媒体不随当前版本分发。2026 年 1 月和 2 月展示 PDF 分别省略一处第三方机器人照片及一页厂商产品图，页内注明处理，技术实验记录保留；[映射](../01_Academic/REPORT_DISPLAY_EDITS.csv) 标明修改页和哈希。
+
+保留报告中的 9DTact 原结构图、管线图、混合通道图和论文 Figure 2.1 可与冻结快照 `Original/source/` 下的原作者图像和海报对应。它们是上游关联文档，沿用同目录项目保留的 MIT 许可和作者信息；其原论文中的测试结果不能当成本项目结果。

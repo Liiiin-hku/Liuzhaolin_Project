@@ -28,6 +28,7 @@
 |---|---|
 | 论文展示 PDF | [39 页 PDF](01_Academic/01_Thesis/Final/Dissertation_LIU%20Zhaolin.pdf)；SHA-256 `e578ed6644dbb0c75e4d61198f1136a02b066b1e5bdf333bc7f49ba4ea824379` |
 | 原始答辩 PDF/PPTX | [答辩资料](01_Academic/03_Defense/Final/)；本次保持文件字节不变 |
+| 阶段报告展示范围 | [阶段导航](01_Academic/02_Stage_Reports/README.md)；早期两轮调研改留摘要，两份后续 PDF 定点省略第三方引用图，修改与哈希见 [映射](01_Academic/REPORT_DISPLAY_EDITS.csv) |
 | CAD、STL、DXF、PCB、BOM | [硬件导航](03_Hardware/README.md)；原始工程文件和引用路径不变 |
 | 相机与深度数组 | 仍在冻结快照内，活动状态见 [验证说明](docs/VALIDATION_STATUS.md) |
 | 原始图片及三个视频 | 原路径和文件字节不变；展示副本有独立来源映射 |
