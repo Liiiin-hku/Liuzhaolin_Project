@@ -32,7 +32,8 @@
 
 - [原始录像映射](VIDEO_SOURCE_MAPPING.csv) 记录原文件、时长、编码与 SHA-256。录像帧率是媒体属性，不代表算法处理帧率。
 - [节选映射](Previews/PREVIEW_SOURCES.json) 记录原视频哈希、精确起点、时长、压缩方式与输出哈希。
-- 每个封面直接链接到仓库中的 MP4 文件页面。GitHub 文件页面如提供播放控件，可直接播放；否则使用其原始文件/下载入口。这里不依赖 Markdown 中不稳定的 `<video>` 嵌入。
+- 每个封面链接到仓库中的 MP4 文件页面。在 GitHub 点击 **View raw** 或 **Download raw file** 下载后播放。2026-09-12 已在 Edge 实际检查三个节选页面并触发下载；当时文件页面没有内嵌播放器。
+- 直接下载：[样机外观（22 秒）](https://github.com/Liiiin-hku/Liuzhaolin_Project/raw/refs/heads/main/05_Demos/Previews/hardware-preview.mp4) · [按压形貌（28 秒）](https://github.com/Liiiin-hku/Liuzhaolin_Project/raw/refs/heads/main/05_Demos/Previews/shape-preview.mp4) · [六轴向量（28 秒）](https://github.com/Liiiin-hku/Liuzhaolin_Project/raw/refs/heads/main/05_Demos/Previews/vector-preview.mp4)。这些链接直接读取本仓库文件，不依赖额外的视频平台。
 - 原始视频保留原始音轨，节选移除了声音。查看视频时，完成状态以本页和验证说明为准。
 
 较早索引位于 [DEMO_INDEX](DEMO_INDEX.md)，以本页和验证状态中的解释为准。

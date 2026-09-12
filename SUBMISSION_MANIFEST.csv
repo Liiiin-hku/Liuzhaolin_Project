@@ -416,7 +416,7 @@ relative_path,size_bytes,sha256,asset_type,authority,notes
 05_Demos/Previews/shape-preview.mp4,1062118,887bc1974694395930e2a095b9ca046658f7ef2da651c72b32c816e5be1dbd29,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
 05_Demos/Previews/vector-preview.jpg,27366,dbf44252f41b605ec5543b155babffcbad17d5c4d007c2c37b44e323647d9476,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
 05_Demos/Previews/vector-preview.mp4,683873,71916123e641d774f3cc655b4c49f929a56435c9885d5e4cb623d83ac95020d9,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
-05_Demos/README.md,2615,210168efe59a36f1f3a4694e702f4360b083c7f818648c2315a01b24e39df321,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
+05_Demos/README.md,3137,e3cbb16b86aa36079fc3d71d3327200525651914114ceee88ad79bab0adfeeb3,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 05_Demos/Successful/custom_tactile_sensor_hardware_showcase.mp4,703360947,01a51913b11ca51e3fd2ff0e420737365229f36240c6ef0213dc7ae7839ace69,Original video,Qualitative source,Materialized LFS bytes; video is not an accuracy or signal-provenance guarantee.
 05_Demos/Successful/realtime_6d_force_visualization_demo.mp4,627341255,51163d86f7fd83a5d4a7289ddbbc0df4c85174a6534be23b0b163559f86c9cfd,Original video,Qualitative source,Materialized LFS bytes; video is not an accuracy or signal-provenance guarantee.
 05_Demos/Successful/shape_reconstruction_pressing_demo.mp4,566819960,dfb8afeda2eb5e7c96937eca5ce0e357a2174a850bb877865dba12219bcd040a,Original video,Qualitative source,Materialized LFS bytes; video is not an accuracy or signal-provenance guarantee.
@@ -431,7 +431,7 @@ docs/assets/sensor-exploded.jpg,59193,a8e6395288a44cfcee25cd78f71d4ca2d039705353
 docs/assets/sensor-prototypes.jpg,326843,60e3cbf54fa08dd0d3a479f53bb5c128e336bd0d55d2b87980fc4cad5a79f213,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
 docs/assets/silicone-manufacturing.jpg,253986,17ae588355aa6f79b355a8fca1d15c94617969d7c6d15d0d25fd93f2f21b91e2,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
 docs/HARDWARE_PROVENANCE.csv,11058,ef5ee7af2343eb0a7d86fabcc02db36a9e4a9b592d68a408273e2117eca3e697,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
-docs/MAINTENANCE.md,2461,c0caeb255818ec54e96ef430f0203b2d0298ca2f2e1fee884adbb87cb4701509,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
+docs/MAINTENANCE.md,2708,234c20d93eea039a829215cc2f510604568167d15e81c355af04b7a91b54e3d9,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 docs/PROJECT_OVERVIEW.md,6123,b5bd7c2a1fb6f6ae42dbddfde66453c615cb805df4e23a78982644012428b650,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 docs/RIGHTS_AND_ATTRIBUTION.md,4142,997282a8bd2e8dbfc37df7859b853b3aaaa055150e9e89e2a26bdfa0aff24944,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 docs/SOFTWARE_SOURCE_COMPARISON.csv,16518,6ff2cc501a94432ecd6c301bb73668fbd3825629aa93f2d5349aaca3df2df9e5,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
