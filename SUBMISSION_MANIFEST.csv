@@ -421,7 +421,7 @@ relative_path,size_bytes,sha256,asset_type,authority,notes
 05_Demos/Successful/realtime_6d_force_visualization_demo.mp4,627341255,51163d86f7fd83a5d4a7289ddbbc0df4c85174a6534be23b0b163559f86c9cfd,Original video,Qualitative source,Materialized LFS bytes; video is not an accuracy or signal-provenance guarantee.
 05_Demos/Successful/shape_reconstruction_pressing_demo.mp4,566819960,dfb8afeda2eb5e7c96937eca5ce0e357a2174a850bb877865dba12219bcd040a,Original video,Qualitative source,Materialized LFS bytes; video is not an accuracy or signal-provenance guarantee.
 05_Demos/VIDEO_SOURCE_MAPPING.csv,2099,03d3d777f9a2a4baa92aff0c5c2c40da53362d29a2e3914d110b8348ba6278be,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
-AGENTS.md,1698,388bf6021a2350629732b14e8962aba4bcf1f8f5a8567142f3dbe2d65dd14d0e,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
+AGENTS.md,1874,83fb129f1dcfb91b6ecbecf9325c91c80b0950e3274436e76359ab3eed98b9f9,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 docs/archive/HANDOVER.md,1371,130de0fbbd774fb735f795523d9a7992d8c0f58b2bd5fe9a08b2e607131c15d3,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 docs/assets/camera-led-integration.jpg,150232,ee920032bacdd6fab5daf392185f14f60413f5c542193cefa838839e3e1c978c,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
 docs/assets/ft300-platform.jpg,230666,4ac9dadbd8759e7dba195ba85cdc8a8ca0124c028de81d31630ae90df5a7c692,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
@@ -431,7 +431,7 @@ docs/assets/sensor-exploded.jpg,59193,a8e6395288a44cfcee25cd78f71d4ca2d039705353
 docs/assets/sensor-prototypes.jpg,326843,60e3cbf54fa08dd0d3a479f53bb5c128e336bd0d55d2b87980fc4cad5a79f213,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
 docs/assets/silicone-manufacturing.jpg,253986,17ae588355aa6f79b355a8fca1d15c94617969d7c6d15d0d25fd93f2f21b91e2,Display derivative,Mapped project source,See image/video source mapping for original hash and processing.
 docs/HARDWARE_PROVENANCE.csv,11058,ef5ee7af2343eb0a7d86fabcc02db36a9e4a9b592d68a408273e2117eca3e697,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
-docs/MAINTENANCE.md,2708,234c20d93eea039a829215cc2f510604568167d15e81c355af04b7a91b54e3d9,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
+docs/MAINTENANCE.md,3241,750aba61877e32ddaf2c68ae341ae313355c4746709b9ceb3d5ecb91069f1bd1,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 docs/PROJECT_OVERVIEW.md,6123,b5bd7c2a1fb6f6ae42dbddfde66453c615cb805df4e23a78982644012428b650,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 docs/RIGHTS_AND_ATTRIBUTION.md,4142,997282a8bd2e8dbfc37df7859b853b3aaaa055150e9e89e2a26bdfa0aff24944,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
 docs/SOFTWARE_SOURCE_COMPARISON.csv,16518,6ff2cc501a94432ecd6c301bb73668fbd3825629aa93f2d5349aaca3df2df9e5,Portfolio documentation,Portfolio revision,Technical presentation and navigation.
