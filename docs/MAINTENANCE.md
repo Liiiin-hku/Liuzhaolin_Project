@@ -1,5 +1,12 @@
 # 作品集维护记录
 
+## 2026-09-12 英文工程展示与项目命名
+
+- 按用户明确要求，将现有仓库更名为 `compact-vision-tactile-sensor`；项目展示标题为 **Compact Vision-Based Tactile Sensor for Robotic End Effectors**。
+- 默认首页改为英文，README_EN 保留兼容入口，README_ZH 提供中文展示；介绍突出结构、光学与布线集成、分层硅胶、两套实物、FT300 平台和夹爪 CAD 方案。
+- 首页聚焦工程成果；详细实验条件、文件来源与验证记录继续通过原技术文档查看。既有验证结论和冻结软件未改。
+- 更新 About、视频链接、版本身份、维护约束及外层清单；旧仓库名称仅保留在历史记录中。
+
 ## 2026-09-12 公开访问验证
 
 - 仓库已作为公开工程作品集发布，固定入口为 `https://github.com/Liiiin-hku/Liuzhaolin_Project`，默认分支为 `main`。

@@ -1,90 +1,104 @@
-English · [中文](README.md)
+English · [Repository home](README.md) · [中文](README_ZH.md)
 
-# Compact Vision-Based Tactile Sensor: Mechanical Design and Hardware Integration
+# Compact Vision-Based Tactile Sensor for Robotic End Effectors
 
-**LIU Zhaolin | MSc Mechanical Engineering graduation project, The University of Hong Kong**
+**Mechanical Design · Prototyping · Hardware Integration**<br>
+**LIU Zhaolin | MSc Mechanical Engineering, The University of Hong Kong**
 
-This project adapts the open-source **9DTact** sensing principle to a different camera and mechanical package. My work covers camera mounting, enclosure design, illumination integration, cable clearance, silicone fabrication and prototype assembly. Two sensors were assembled, and a mechanical test platform couples a custom sensor to a **Robotiq FT300** force/torque sensor.
+An engineering project bringing together compact sensor packaging, optical hardware, silicone fabrication and robotic mounting interfaces. Building on **9DTact**, I developed camera and enclosure adaptations, integrated illumination and internal routing, fabricated and assembled **two tactile sensor prototypes**, and built a test platform mechanically coupled to a **Robotiq FT300** six-axis force/torque sensor.
 
-![Two assembled tactile sensor prototypes with flex cables and external decoder boards](docs/assets/sensor-prototypes.jpg)
+This portfolio follows the work from **CAD and component integration to physical prototypes and tactile contact demonstrations**, with engineering drawings, manufacturing records, software and experimental materials available to explore.
 
-**Start with the hardware:** [22-second prototype video](05_Demos/Previews/hardware-preview.mp4) · [FT300 coupling platform](docs/assets/ft300-platform.jpg) · [Design and assembly evidence](03_Hardware/README.md)
+![Two assembled tactile sensor prototypes with flexible camera cables and external decoder boards](docs/assets/sensor-prototypes.jpg)
 
-## Quick links
+*Two assembled prototypes showing the printed housings, tactile interfaces, flexible camera connections and external decoder boards.*
 
-| Review interest | Entry point |
+## Explore the project
+
+| Start here | What you can review |
 |---|---|
-| Mechanical design, CAD, electronics and fabrication | [Hardware portfolio](03_Hardware/README.md) |
-| Physical prototypes and interaction | [Three demonstrations and viewing guide](05_Demos/README.md) |
-| Responsibilities and supporting files | [Project overview and contribution evidence](docs/PROJECT_OVERVIEW.md) |
-| Software reproduction | [Installation and workflow navigation](02_Software/SOFTWARE_INDEX.md) |
+| [Mechanical design and hardware](03_Hardware/README.md) | Sensor parts, robotic mounting concepts, FT300 adapters, PCB integration and BOMs |
+| [Prototype and contact demonstrations](05_Demos/README.md) | Short video extracts, original recordings and viewing instructions |
+| [Engineering contributions](docs/PROJECT_OVERVIEW.md) | Responsibilities, design methods and supporting source files |
+| [Software and system integration](02_Software/SOFTWARE_INDEX.md) | Camera calibration tools, reconstruction, FT300 workflows and ROS documentation |
 
-For mechanical design and hardware integration reviews, follow **hardware portfolio → contribution evidence → demonstrations and validation status**. Retained outputs include **two physical prototypes, 12 native part files and one LED-board assembly, nine STL files and three mould DXF files**. Source files, photographs and attribution can be cross-checked. These file counts do not establish a complete assembly package; see the hardware guide for the exact scope.
+**Quick hardware tour:** [22-second prototype video](05_Demos/Previews/hardware-preview.mp4) · [FT300 test platform](docs/assets/ft300-platform.jpg) · [Manufacturing photo collection](03_Hardware/08_Renders_and_Photos/PHOTO_CATALOG.md)
 
-## My engineering work
+## My engineering contributions
 
-- **Compact packaging and camera adaptation:** integrate an OV5640 camera with an external decoder; adapt the enclosure, locating features, retention, window support and cable outlet to the new imaging chain.
-- **Illumination and cable integration:** align the camera with the eight-LED board and tactile window; provide flex-cable clearance around fasteners and outside the principal load path.
-- **Fabrication and assembly:** prepare printed parts and detachable moulds, seal seams, mix and vacuum-degas silicone, cast and cure successive layers, demould and assemble two prototypes.
-- **Calibration and experimental integration:** implement manual 7 × 9 control-point selection to handle distortion and vignetting; carry out image rectification and qualitative shape experiments; design adapters for the FT300 platform.
-- **Software workflow:** organise sensor configuration, FT300 acquisition, dataset checks, training/inference entry points and ROS Noetic integration around the upstream methods. Implemented code is distinguished from demonstrated or quantitatively validated performance.
-
-**Attribution boundary:** 9DTact methods and `Original/` belong to the upstream authors. The retained LED PCB project, Gerber ZIP, electronics BOM and placement workbook are byte-identical to files in the upstream snapshot. They support my mounting and illumination integration work; they do not establish an independently authored circuit design.
-
-## Design and integration evidence
-
-![Exploded view of the sensor optical and mechanical stack](docs/assets/sensor-exploded.jpg)
-
-The sensor head contains the camera, centred illumination, window and tactile interface. The decoder remains accessible outside the housing. The design coordinates locating surfaces, retention, fastener access and cable clearance. See the [custom sensor parts](03_Hardware/01_CAD_Source/SolidWorks_Parts/Optimized_Sensor/) and [manufacturing record](03_Hardware/09_Manufacturing_Notes/ASSEMBLY_AND_MANUFACTURING_NOTES.md).
-
-![Camera, LED board, flex cable and external decoder](docs/assets/camera-led-integration.jpg)
-
-The portfolio uses **compact structural adaptation**, without a 30% volume-reduction claim. A consistent baseline, modified assembly envelope and calculation are missing. The approximate 42 × 38 × 34 mm stated in the defense is a design description, not a CAD measurement or complete-system volume verification performed for this portfolio.
-
-## Fabrication and experimental platform
-
-The fabrication record covers the transparent G50 support layer, translucent G5 deformation layer and black G25 contact layer. Photographs document mould sealing, mixing, degassing, staged casting, curing and assembly; they are not material-property or lifetime tests.
-
-![Detachable moulds used for staged silicone fabrication](docs/assets/silicone-manufacturing.jpg)
-
-![Custom sensor mechanically coupled to Robotiq FT300](docs/assets/ft300-platform.jpg)
-
-The FT300 and sensor adapter parts are retained in [Test_Connections](03_Hardware/01_CAD_Source/SolidWorks_Parts/Test_Connections/). A two-finger gripper integration concept is supported by left/right CAD and STL parts and an assembly rendering. Physical grasping and tactile closed-loop control are not established by the current records. The proposed identification as the Fangzhou Wuxian R5 is not yet supported by a traceable model or manufacturer reference.
-
-![Two-finger gripper integration CAD rendering; design concept only](docs/assets/gripper-cad.jpg)
-
-## Demonstrations and validation
-
-The [demo guide](05_Demos/README.md) presents hardware, pressing/shape response and six-axis vector visualisation recordings. The vector video's model, signal source, physical units and sensor identity lack a complete session record. It cannot establish whether the display represents FT300 measurements or tactile-model predictions, or demonstrate prediction accuracy.
-
-Manual point selection, rectification, spherical-indenter work and qualitative screw reconstruction have retained evidence. In the current frozen software, Sensor 1 and Sensor 2 share identical core camera arrays and both active depth LUTs match the upstream LUT. Historical experiment descriptions must be distinguished from the active packaged files.
-
-| Scope | Evidence and boundary |
+| Workstream | Design and implementation |
 |---|---|
-| Two prototypes, fabrication and FT300 platform | CAD, process photographs, physical hardware and qualitative demonstrations |
-| Rectification and shape reconstruction | Scripts, arrays, process images and qualitative results; no independent error evaluation |
-| FT300 zeroing, frame transforms and synchronisation | Implemented code and offline tests; frozen real acquisition-session logs are missing |
-| Custom image-to-six-axis force mapping | Training and inference code; no curated paired training dataset, formal checkpoint or independent accuracy results |
-| Gripper integration | CAD/STL and rendering; physical grasping validation is not established |
+| **Mechanical packaging** | Adapted the sensor housing, locating features, camera retention and optical-window support around an OV5640 imaging module and external decoder board. |
+| **Optical and electrical integration** | Coordinated the lens, eight-LED illumination board and tactile window; arranged the flexible cable outlet and clearances around fasteners and the mechanical load path. |
+| **Fabrication and assembly** | Prepared printed components and silicone moulds; carried out sealing, mixing, vacuum degassing, layered casting, curing, demoulding and prototype assembly. |
+| **Image calibration and tactile experiments** | Implemented an interactive 7 × 9 calibration-point selection tool, worked on image rectification, and carried out spherical-indenter and contact-shape reconstruction experiments. |
+| **Test fixtures and robotic interfaces** | Developed mounting adapters for the FT300-coupled platform and a two-finger gripper mounting concept, supported by CAD, STL files and assembly renderings. |
+| **Software and ROS integration** | Organised sensor configurations and tools for FT300 acquisition, coordinate transforms, data checks, training/inference workflows and ROS Noetic operation. |
 
-On **2026-09-11**, **30 offline tests and the frozen software's static submission check passed on Windows / Python 3.12**. This run did not operate Ubuntu/ROS hardware, a camera, FT300, model training or a SolidWorks rebuild. See [validation status](docs/VALIDATION_STATUS.md).
+## Sensor architecture and compact packaging
 
-## Repository navigation
+![Exploded view of the sensor housing, camera, illumination board, optical window and layered silicone interface](docs/assets/sensor-exploded.jpg)
+
+The mechanical design brings the camera, illumination, optical window and compliant tactile interface into a compact sensor head. Locating and retention features coordinate the optical stack, while an external decoder board connects through a flexible cable. Cable routing, assembly access and the mounting interface are considered alongside the sensor's optical requirements.
+
+[Sensor CAD parts](03_Hardware/01_CAD_Source/SolidWorks_Parts/Optimized_Sensor/) · [STL models](03_Hardware/03_Print_Files_STL/README.md) · [Assembly and manufacturing records](03_Hardware/09_Manufacturing_Notes/ASSEMBLY_AND_MANUFACTURING_NOTES.md)
+
+![Camera and eight-LED board integrated with the flexible cable and decoder](docs/assets/camera-led-integration.jpg)
+
+*Camera, illumination and cable integration. The LED PCB is reused from the upstream design; my work focuses on its mechanical placement, optical alignment and integration into the adapted sensor.*
+
+## Silicone fabrication and prototype assembly
+
+The tactile interface uses a layered silicone construction: a transparent **G50 support layer**, a translucent **G5 deformation layer** and a black **G25 contact layer**. The fabrication workflow covers mould preparation, seam sealing, mixing and vacuum degassing, successive casting and curing, followed by demoulding and final assembly.
+
+![Moulds and components used in the layered silicone fabrication process](docs/assets/silicone-manufacturing.jpg)
+
+The engineering archive includes **12 native SolidWorks part files, one LED-board assembly, nine STL files and three mould DXF files**, alongside component photographs, manufacturing records and bills of materials.
+
+[Fabrication photographs](03_Hardware/09_Manufacturing_Notes/Process_Photos/) · [Mould drawings](03_Hardware/04_Engineering_Drawings/Acrylic_Mold/) · [BOM navigation](03_Hardware/BOM_INDEX.md)
+
+## FT300 test platform and end-effector mounting
+
+![Custom tactile sensor mounted on a Robotiq FT300 mechanical test platform](docs/assets/ft300-platform.jpg)
+
+The test fixture mechanically couples the tactile sensor to a **Robotiq FT300** reference force/torque sensor. Dedicated adapter parts provide a mounting interface and load-transfer path for contact experiments. The repository includes the physical setup, connection CAD and supporting acquisition workflows.
+
+[FT300 adapter parts](03_Hardware/01_CAD_Source/SolidWorks_Parts/Test_Connections/) · [FT300 software setup](02_Software/Final_Repository_Snapshot/docs/06_FT300_SETUP.md)
+
+![CAD rendering of a two-finger gripper concept with tactile sensor mounting interfaces](docs/assets/gripper-cad.jpg)
+
+*Two-finger gripper mounting concept: left/right parts and sensor placement developed at the CAD stage.*
+
+[Gripper CAD](03_Hardware/01_CAD_Source/SolidWorks_Parts/Gripper/) · [Gripper STL files](03_Hardware/03_Print_Files_STL/Existing_Source/Gripper/)
+
+## Experiments and demonstrations
+
+The project records show the assembled sensor, its connection to the computing environment, and tactile contact with an accompanying shape-reconstruction display. Calibration materials include point-selection images, spherical-indenter experiments and a reconstructed contact-shape example.
+
+| Recording | View |
+|---|---|
+| Prototype appearance, illumination and connections | [22-second extract](05_Demos/Previews/hardware-preview.mp4) |
+| Pressing interaction and shape response | [28-second extract](05_Demos/Previews/shape-preview.mp4) |
+| Six-axis vector interface demonstration | [28-second extract](05_Demos/Previews/vector-preview.mp4) |
+
+Open a video file and select **View raw** or **Download raw file** to watch. The [demo guide](05_Demos/README.md) provides original recordings, timestamps and interpretation. [Technical validation notes](docs/VALIDATION_STATUS.md) document experiment conditions and software checks.
+
+## Engineering archive
 
 | Area | Contents |
 |---|---|
-| [01_Academic](01_Academic/ACADEMIC_INDEX.md) | Display dissertation PDF, defense, stage records and 33 bibliography entries |
-| [02_Software](02_Software/SOFTWARE_INDEX.md) | Complete frozen software snapshot available in this repository |
-| [03_Hardware](03_Hardware/README.md) | CAD, STL, DXF, PCB, BOM, photographs and manufacturing records |
-| [04_Data_and_Models](04_Data_and_Models/DATA_MODEL_INDEX.md) | Calibration inventories, process images, shape result and collection protocol |
-| [05_Demos](05_Demos/README.md) | Video covers, viewing links and interpretation |
+| [Academic work](01_Academic/ACADEMIC_INDEX.md) | Dissertation, presentation, project reports and reference index |
+| [Software](02_Software/SOFTWARE_INDEX.md) | Frozen source snapshot, installation and operating guides |
+| [Hardware](03_Hardware/README.md) | CAD, STL, DXF, PCB, BOM, photographs and manufacturing records |
+| [Calibration and experiment materials](04_Data_and_Models/DATA_MODEL_INDEX.md) | Calibration files, process images and contact-shape results |
+| [Demonstrations](05_Demos/README.md) | Video covers, short extracts and original recordings |
 
-[Timeline](PROGRESS_TIMELINE.md) · [Version provenance](VERSION_FREEZE.md) · [File manifest](SUBMISSION_MANIFEST.csv) · [Archived technical handover](docs/archive/HANDOVER.md)
+The documented software environment is **Ubuntu 20.04 / Python 3.8 / ROS Noetic**. Start with the [installation and workflow guide](02_Software/SOFTWARE_INDEX.md).
 
-## Reproduction and attribution
+## Project background and attribution
 
-Start with the [software guide](02_Software/SOFTWARE_INDEX.md), which links to real installation and operating documents inside the snapshot. The documented baseline is Ubuntu 20.04, Python 3.8 and ROS Noetic. Run one sensor at a time and keep configurations, calibration, datasets and models associated with their sensor.
+This portfolio presents the engineering work associated with my master's dissertation, *Development of a Compact Vision-Based Tactile Sensor for Robotic End Effectors*.
 
-Credit goes to the [9DTact authors and upstream project](https://github.com/linchangyi1/9DTact). The software source is fixed at related-repository commit `98ebb7da0010df27ef634f9868e557d77fa73ec5`. The portfolio revision changes the outer presentation while preserving the frozen software. The original handover snapshot has documented line-ending and manifest differences from the remote commit; see [version provenance](VERSION_FREEZE.md).
+The project builds on the [9DTact sensing methods and open-source design](https://github.com/linchangyi1/9DTact). Upstream algorithms, reference hardware and licences are retained with their attribution; project-specific adaptations and integration tools are documented in the source snapshot. The software reference commit is `98ebb7da0010df27ef634f9868e557d77fa73ec5`.
 
-[Rights and attribution](docs/RIGHTS_AND_ATTRIBUTION.md) distinguish software, CAD/PCB, photos, dissertation and third-party papers. No new blanket open-source licence is applied to this portfolio; existing upstream licences and credits remain effective.
+[Project timeline](PROGRESS_TIMELINE.md) · [Version provenance](VERSION_FREEZE.md) · [Rights and attribution](docs/RIGHTS_AND_ATTRIBUTION.md) · [File manifest](SUBMISSION_MANIFEST.csv)
