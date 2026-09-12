@@ -10,6 +10,8 @@
 
 *两套成品样机；外置解码板通过柔性排线连接传感器头部。[原始照片与图集](03_Hardware/08_Renders_and_Photos/PHOTO_CATALOG.md)*
 
+**先看实物：** [22 秒样机视频](05_Demos/Previews/hardware-preview.mp4) · [FT300 耦合平台](docs/assets/ft300-platform.jpg) · [结构与装配证据](03_Hardware/README.md)
+
 ## 快速查看
 
 | 想了解什么 | 从这里进入 |
@@ -18,6 +20,8 @@
 | 真实样机和交互响应 | [三个演示视频及观看说明](05_Demos/README.md) |
 | 我负责什么、怎样解决问题 | [项目概览与个人贡献证据](docs/PROJECT_OVERVIEW.md) |
 | 软件安装和复现 | [本仓库冻结快照的运行入口](02_Software/SOFTWARE_INDEX.md) |
+
+面向机械设计、结构设计和硬件集成岗位，建议先看 **硬件作品 → 个人贡献证据 → 演示与验证状态**。资料包括 **两套实物样机、12 个原生零件与 1 个 LED 板装配体、9 个 STL、3 个模具 DXF**；原生文件、直观图片和来源说明可交叉查看。文件数量不代表完整装配交付，具体范围见硬件导航。
 
 ## 我的职责与工程贡献
 

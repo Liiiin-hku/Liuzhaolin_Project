@@ -5,6 +5,7 @@
 - 本仓库：`Liiiin-hku/Liuzhaolin_Project`，默认分支 `main`。
 - 原始外层交接提交：`3d3de84763bf30712eb6fb94a00f48f3ecc1210e`。
 - 作品集整理日期：2026-09-11；外层文档与展示资源版本 `portfolio-2026-09-11`（文档版本名，不是 Git tag）。
+- 招聘阅读入口更新：2026-09-12；外层展示文档版本 `portfolio-2026-09-12`。硬件和冻结软件内容不变。
 - 当前外层文件清单：[SUBMISSION_MANIFEST.csv](SUBMISSION_MANIFEST.csv)。该清单记录当前工作树的实际文件大小和 SHA-256，LFS 视频按完整文件计算。
 
 新版资料包不与原教师交接包逐字节相同；旧 ZIP 与旧校验值不适用于此版本。本次不创建新的交接压缩包。

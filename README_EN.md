@@ -8,6 +8,8 @@ This project adapts the open-source **9DTact** sensing principle to a different 
 
 ![Two assembled tactile sensor prototypes with flex cables and external decoder boards](docs/assets/sensor-prototypes.jpg)
 
+**Start with the hardware:** [22-second prototype video](05_Demos/Previews/hardware-preview.mp4) · [FT300 coupling platform](docs/assets/ft300-platform.jpg) · [Design and assembly evidence](03_Hardware/README.md)
+
 ## Quick links
 
 | Review interest | Entry point |
@@ -16,6 +18,8 @@ This project adapts the open-source **9DTact** sensing principle to a different 
 | Physical prototypes and interaction | [Three demonstrations and viewing guide](05_Demos/README.md) |
 | Responsibilities and supporting files | [Project overview and contribution evidence](docs/PROJECT_OVERVIEW.md) |
 | Software reproduction | [Installation and workflow navigation](02_Software/SOFTWARE_INDEX.md) |
+
+For mechanical design and hardware integration reviews, follow **hardware portfolio → contribution evidence → demonstrations and validation status**. Retained outputs include **two physical prototypes, 12 native part files and one LED-board assembly, nine STL files and three mould DXF files**. Source files, photographs and attribution can be cross-checked. These file counts do not establish a complete assembly package; see the hardware guide for the exact scope.
 
 ## My engineering work
 
